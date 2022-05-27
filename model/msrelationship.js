@@ -1,0 +1,31 @@
+var db = require('../configuration/database/db_sql')
+const Sequelize = require('sequelize');
+const msrelationship = db.define('msrelationship', {
+  relationshipId: { primaryKey: true, autoIncrement: true, type: Sequelize.INTEGER,  allowNull: false },
+  idcard: {  type: Sequelize.STRING(25),  allowNull: true },
+  relationshipTypeCode: {  type: Sequelize.STRING(20),  allowNull: true },
+  relationshipManual: {  type: Sequelize.STRING(50),  allowNull: true },
+  fullname: {  type: Sequelize.STRING(255),  allowNull: true },
+  email: {  type: Sequelize.STRING(255),  allowNull: true },
+  tel: {  type: Sequelize.STRING(255),  allowNull: true },
+  race: {  type: Sequelize.STRING(255),  allowNull: true },
+  address: {  type: Sequelize.STRING(255),  allowNull: true },
+  country: {  type: Sequelize.STRING(25),  allowNull: true },
+  districts: {  type: Sequelize.STRING(25),  allowNull: true },
+  amphures: {  type: Sequelize.STRING(25),  allowNull: true },
+  province: {  type: Sequelize.STRING(25),  allowNull: true },
+  postal: {  type: Sequelize.STRING(255),  allowNull: true },
+  contactName: {  type: Sequelize.STRING(255),  allowNull: true },
+  contactName2: {  type: Sequelize.STRING(255),  allowNull: true },
+  phone: {  type: Sequelize.STRING(50),  allowNull: true },
+  phone2: {  type: Sequelize.STRING(50),  allowNull: true },
+  active: {  type: Sequelize.STRING(1),  allowNull: true },
+  remark: {  type: Sequelize.STRING,  allowNull: true },
+  createdBy: {  type: Sequelize.STRING(50),  allowNull: true },
+  createDate: {  type: Sequelize.DATE,  allowNull: true },
+  updatedBy: {  type: Sequelize.STRING(50),  allowNull: true },
+  updateDate: {  type: Sequelize.DATE,  allowNull: true },
+  sourceId: {  type: Sequelize.STRING(50),  allowNull: true },
+  source: {  type: Sequelize.STRING(50),  allowNull: true },
+}, { tableName: 'msrelationship' });
+module.exports = msrelationship;

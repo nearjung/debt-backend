@@ -1,0 +1,36 @@
+[2022-04-24T20:08:44.382] [ERROR] Think - Error
+    at Query.run (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/sequelize.js:313:28
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async MySQLQueryInterface.select (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:12)
+    at async Function.findAll (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/model.js:1119:21)
+    at async findByDebt (/Users/kittipobthongla/Documents/debt/back-end/controller/trdocument/get.js:48:22)
+[2022-04-24T20:08:48.878] [ERROR] Think - Error
+    at Query.run (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/sequelize.js:313:28
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async MySQLQueryInterface.select (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:12)
+    at async Function.findAll (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/model.js:1119:21)
+    at async findByDebt (/Users/kittipobthongla/Documents/debt/back-end/controller/trdocument/get.js:48:22)
+[2022-04-24T20:43:59.734] [ERROR] Think - ReferenceError: debtCollectionNumber is not defined
+    at findByDebt (/Users/kittipobthongla/Documents/debt/back-end/controller/trfollow/get.js:61:53)
+    at Layer.handle [as handle_request] (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:47:12)
+[2022-04-24T20:44:45.131] [ERROR] Think - ReferenceError: debtCollectionNumber is not defined
+    at findByDebt (/Users/kittipobthongla/Documents/debt/back-end/controller/trfollow/get.js:61:53)
+    at Layer.handle [as handle_request] (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/kittipobthongla/Documents/debt/back-end/node_modules/express/lib/router/index.js:47:12)
