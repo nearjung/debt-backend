@@ -1,14 +1,3 @@
-[2022-04-28T03:01:47.376] [ERROR] Think - Error: WHERE parameter "status" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1655:13)
-    at /Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1646:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1644:35)
-    at MySQLQueryGenerator.getWhereConditions (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1987:19)
-    at MySQLQueryGenerator.selectQuery (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-generator.js:932:28)
-    at MySQLQueryInterface.select (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
-    at Function.findAll (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/model.js:1119:47)
-    at async findByStatus (/Users/kittipobthongla/Documents/debt/back-end/controller/trdebtcollection/get.js:117:24)
-[2022-04-28T09:35:21.555] [ERROR] Think - SequelizeConnectionError: connect ENETUNREACH 119.59.115.132:3306 - Local (0.0.0.0:52710)
-    at ConnectionManager.connect (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+[2022-05-28T15:44:43.579] [ERROR] Think - TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+    at findByStatus (/Users/kittipobthongla/Documents/debt/debt-backend/controller/trdebtcollection/get.js:134:32)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ConnectionManager._connect (/Users/kittipobthongla/Documents/debt/back-end/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:216:24)

@@ -132,18 +132,17 @@ const findByStatus = async (req, res, next) => {
 
         let count = 0;
         for (let debt of result) {
-            debt.relationship = [];
-            let data = await trdebtrelation.findAll({
-                where: {
-                    debtCollectionNumber: debt.debtCollectionNumber,
-                    active: 'Y'
-                }
-            }).catch(err => {
-                console.error("code : 7f5f2494-a850-4df8-8d3e-53ff35d89827");
-                throw err;
-            });
-
-            debt.relationship = data;
+            debt.dataValues.relationship = [];
+            sql = "";
+            sql += " SELECT";
+            sql += " 	* ";
+            sql += " FROM";
+            sql += " 	trdebtrelation";
+            sql += " 	INNER JOIN mscustomer ON mscustomer.idcard = trdebtrelation.idcard";
+            sql += " WHERE trdebtrelation.active = 'Y'";
+            sql += " AND trdebtrelation.debtCollectionNumber = '" + debt.debtCollectionNumber + "'";
+            let data = await db_sql.query(sql, { type: Sequelize.QueryTypes.SELECT });
+            debt.dataValues.relationship = data;
             count = count + 1;
         }
 
